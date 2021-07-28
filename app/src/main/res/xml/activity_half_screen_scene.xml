@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="700"
+        motion:autoTransition="none">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/fr"
+               motion:framePosition="0"
+               android:translationY="500dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/fr"
+               motion:framePosition="80"
+               android:translationY="-30dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/fr"
+               motion:framePosition="90"
+               android:translationY="30dp" />
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start_wl2">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end_wl2">
+    </ConstraintSet>
+</MotionScene>

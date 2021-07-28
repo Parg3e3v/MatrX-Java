@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end_wl2"
+        motion:constraintSetStart="@id/start_wl2"
+        motion:duration="2500"
+        android:id="@+id/st_end_wl2">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/imageView4"
+               motion:framePosition="0"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/imageView4"
+               motion:framePosition="40"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/imageView4"
+               motion:framePosition="0"
+               android:translationY="-30dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/imageView4"
+               motion:framePosition="46"
+               android:translationY="0dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView8"
+               motion:framePosition="0"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView8"
+               motion:framePosition="60"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView8"
+               motion:framePosition="80"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView8"
+               motion:framePosition="60"
+               android:translationY="-30dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView8"
+               motion:framePosition="74"
+               android:translationY="0dp" />
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start_wl2">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end_wl2">
+        <Constraint
+            android:id="@+id/button"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="113dp"
+            android:layout_height="60dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0"
+            android:layout_marginRight="16dp" />
+        <Constraint
+            android:id="@+id/button3"
+            android:layout_width="113dp"
+            android:layout_height="60dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:alpha="0"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/buttons" >
+        <Constraint
+            android:id="@+id/button"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="113dp"
+            android:layout_height="60dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="1"
+            android:layout_marginRight="16dp" />
+        <Constraint
+            android:id="@+id/button3"
+            android:layout_width="113dp"
+            android:layout_height="60dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:alpha="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/but_trans"
+        motion:constraintSetStart="@+id/end_wl2"
+        motion:constraintSetEnd="@+id/buttons"
+        motion:duration="1000" />
+</MotionScene>

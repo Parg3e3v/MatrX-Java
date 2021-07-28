@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animAssist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00FFFFFF"
+    android:gravity="center|bottom"
+    app:layoutDescription="@xml/activity_half_screen_scene">
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="0dp"
+        android:layout_height="707dp"
+        android:layout_marginBottom="399dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fr" />
+
+
+    <fragment
+        android:id="@+id/fr"
+        android:name="com.craft3r.matrx.FragmentOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout="@layout/fragment_one" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
