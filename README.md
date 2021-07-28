@@ -8,5 +8,5 @@ This is voice assistent for android
 
 # Screenshots
 <p align="center">
-  <img width="800" height="380" src="https://i.imgur.com/Zudrlbj.jpg">
+  <img width="380" height="800" src="https://i.imgur.com/Zudrlbj.jpg">
 </p>
